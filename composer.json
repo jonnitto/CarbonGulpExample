@@ -1,0 +1,57 @@
+{
+    "name": "CarbonGulpExample",
+    "homepage": "https://example.domain.tld",
+    "author": "Jon Uhlmann",
+    "description": "Example of Carbon/Gulp",
+    "support": {
+        "email": "hello@neos.io",
+        "slack": "http://slack.neos.io/",
+        "forum": "https://discuss.neos.io/",
+        "wiki": "https://discuss.neos.io/c/the-neos-project/project-documentation",
+        "issues": "https://github.com/neos/neos-development-collection/issues",
+        "docs": "http://neos.readthedocs.org/",
+        "source": "https://github.com/neos/neos-base-distribution"
+    },
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin"
+    },
+    "require": {
+        "neos/neos": "~3.3.0",
+        "neos/redirecthandler-databasestorage": "*",
+        "neos/redirecthandler-neosadapter": "*",
+        "webexcess/redirecthandler-backend": "*",
+        "neos/neos-ui": "*",
+        "neos/neos-ui-compiled": "*",
+        "jonnitto/example": "@dev"
+    },
+    "require-dev": {
+        "sitegeist/magicwand": "^2.0",
+        "carbon/gulp": "@dev",
+        "moc/synchronizeurl": "^2.0"
+    },
+    "replace": {
+        "typo3/neos-base-distribution": "3.3.0"
+    },
+    "suggest": {
+        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+            "if ls Build/Gulp/Distribution/Installer.sh >/dev/null 2>&1; then sh Build/Gulp/Distribution/Installer.sh; fi"
+        ],
+        "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "gulp": "yarn start",
+        "build": "yarn build",
+        "pipeline": "yarn pipeline"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": ".src/Jonnitto.Example"
+        }
+    ]
+}
