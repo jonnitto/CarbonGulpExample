@@ -1,0 +1,23 @@
+{
+  "name": "jonnitto/example",
+  "description": "Example",
+  "type": "neos-site",
+  "authors": [
+    {
+      "name": "Jon Uhlmann",
+      "email": "me@jonnitto.ch",
+      "homepage": "https://jonnitto.ch",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jonnitto\\Example\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Jonnitto.Example"
+    }
+  }
+}
