@@ -1,6 +1,6 @@
 {
-  "name": "jonnitto/example",
-  "description": "Example",
+  "name": "jonnitto/Theme",
+  "description": "Theme",
   "type": "neos-site",
   "authors": [
     {
@@ -12,12 +12,15 @@
   ],
   "autoload": {
     "psr-4": {
-      "Jonnitto\\Example\\": "Classes/"
+      "Jonnitto\\Theme\\": "Classes/"
     }
   },
   "extra": {
     "neos": {
-      "package-key": "Jonnitto.Example"
+      "package-key": "Jonnitto.Theme"
     }
+  },
+  "require": {
+    "jonnitto/sitemap": "^3.1"
   }
 }

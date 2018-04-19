@@ -16,6 +16,8 @@
     "declaration-colon-newline-after": null,
     "at-rule-empty-line-before": null,
     "at-rule-no-unknown": null,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": [ true, { "severity": "warning" }],
     "max-empty-lines": 3,
     "max-nesting-depth": 5,
     "no-invalid-double-slash-comments": true,
@@ -25,7 +27,9 @@
         "grid-kiss",
         "font-range","min-font-size","max-font-size","lower-font-range","upper-font-range",
         "font-awesome",
-        "border-top-radius", "border-right-radius", "border-bottom-radius", "border-left-radius"
+        "size","min-size","max-size",
+        "border-top-radius","border-right-radius","border-bottom-radius","border-left-radius",
+        "tap-highlight-color","touch-callout"
       ]
     }],
     "selector-pseudo-class-no-unknown": [true, {
