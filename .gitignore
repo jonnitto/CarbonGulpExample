@@ -4,9 +4,9 @@ node_modules
 *.example
 .thumbs
 .idea
+.vscode
 .DS_Store
 .sass-cache
-.vscode
 
 /*.txt
 /*.rst
@@ -25,7 +25,6 @@ node_modules
 /Web/_Resources
 /Web/index.php
 /Web/robots.txt
-/Web/.user.ini
 
 # ignore the downloaded selenium server, config and the selenium
 # temporary directory (which starts with a quote, do not ask why...)
