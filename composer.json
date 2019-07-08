@@ -1,38 +1,21 @@
 {
     "name": "CarbonGulpExample",
     "homepage": "https://example.domain.tld",
-    "author": "Jon Uhlmann",
     "description": "Example of Carbon/Gulp",
-    "support": {
-        "email": "hello@neos.io",
-        "slack": "http://slack.neos.io/",
-        "forum": "https://discuss.neos.io/",
-        "wiki": "https://discuss.neos.io/c/the-neos-project/project-documentation",
-        "issues": "https://github.com/neos/neos-development-collection/issues",
-        "docs": "http://neos.readthedocs.org/",
-        "source": "https://github.com/neos/neos-base-distribution"
+    "extra": {
+        "author": "Jon Uhlmann"
     },
     "config": {
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~4.0.0",
-        "neos/redirecthandler-databasestorage": "*",
-        "neos/redirecthandler-neosadapter": "*",
-        "webexcess/redirecthandler-backend": "*",
+        "neos/neos": "~4.3.0",
         "neos/neos-ui": "*",
-        "neos/neos-ui-compiled": "*",
         "jonnitto/theme": "@dev"
     },
     "require-dev": {
         "carbon/gulp": "*"
-    },
-    "replace": {
-        "typo3/neos-base-distribution": "4.0.0"
-    },
-    "suggest": {
-        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
     },
     "scripts": {
         "post-update-cmd": [

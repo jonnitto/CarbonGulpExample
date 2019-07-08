@@ -19,8 +19,5 @@
     "neos": {
       "package-key": "Jonnitto.Theme"
     }
-  },
-  "require": {
-    "jonnitto/sitemap": "^3.1"
   }
 }
