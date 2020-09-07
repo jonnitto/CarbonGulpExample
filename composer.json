@@ -9,7 +9,7 @@
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~4.3.0",
+        "neos/neos": "~5.2.0",
         "neos/neos-ui": "*",
         "jonnitto/theme": "@dev"
     },
